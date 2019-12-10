@@ -1,0 +1,12 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run a one-line script
+      run: GIT_USER=castlemilk CURRENT_BRANCH=master USE_SSH=true npm run publish-gh-pages
