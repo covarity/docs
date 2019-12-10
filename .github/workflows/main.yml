@@ -15,4 +15,11 @@ jobs:
       run: npm install
     - name: publish docs
       working-directory: website
-      run: GIT_USER=castlemilk CURRENT_BRANCH=master USE_SSH=true npm run publish-gh-pages
+      env:
+        GITHUB_TOKEN: ${{ secrets.github_token }}
+        COMMIT_MSG: |
+          publish docs
+          skip-checks: true
+      
+      run: |
+        GIT_USER=actions-pipeline CURRENT_BRANCH=master USE_SSH=true npm run publish-gh-pages
