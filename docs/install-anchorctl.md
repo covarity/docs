@@ -4,6 +4,7 @@ title: Installing Anchorctl
 sidebar_label: Install Anchorctl
 ---
 
+TODO: install instructions 
 Check the [documentation](https://docusaurus.io) for how to use Docusaurus.
 
 ## Lorem
