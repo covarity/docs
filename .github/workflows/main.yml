@@ -16,7 +16,7 @@ jobs:
     - name: publish docs
       working-directory: website
       env:
-        GITHUB_TOKEN: ${{ secrets.github_token }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_ACCESS_TOKEN }}
         COMMIT_MSG: |
           publish docs
           skip-checks: true
