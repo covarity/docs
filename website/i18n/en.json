@@ -3,15 +3,8 @@
   "localized-strings": {
     "next": "Next",
     "previous": "Previous",
-    "tagline": "A website for testing",
+    "tagline": "Integration Testing for Cloud Native tools",
     "docs": {
-      "doc1": {
-        "title": "Latin-ish",
-        "sidebar_label": "Example Page"
-      },
-      "doc2": {
-        "title": "document number 2"
-      },
       "doc3": {
         "title": "This is document number 3"
       },
@@ -20,6 +13,24 @@
       },
       "doc5": {
         "title": "Fifth Document"
+      },
+      "examples": {
+        "title": "Pipeline Examples"
+      },
+      "install-anchorctl": {
+        "title": "Installing Anchorctl",
+        "sidebar_label": "Install Anchorctl"
+      },
+      "intro-anchorctl": {
+        "title": "What is anchorctl?",
+        "sidebar_label": "What is anchorctl?"
+      },
+      "testing-opa": {
+        "title": "Integration Testing OPA"
+      },
+      "usage-anchorctl": {
+        "title": "Using Anchorctl",
+        "sidebar_label": "Using Anchorctl"
       }
     },
     "links": {
@@ -29,9 +40,9 @@
       "Blog": "Blog"
     },
     "categories": {
-      "Docusaurus": "Docusaurus",
-      "First Category": "First Category",
-      "Second Category": "Second Category"
+      "anchorctl": "anchorctl",
+      "Tutorials": "Tutorials",
+      "Pipeline Examples": "Pipeline Examples"
     }
   },
   "pages-strings": {
