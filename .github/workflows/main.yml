@@ -22,4 +22,8 @@ jobs:
           skip-checks: true
       
       run: |
-        GIT_USER=actions-pipeline CURRENT_BRANCH=master npm run publish-gh-pages
+        git config user.email "ben.ebsworth@gmail.com"
+        git config user.name "castlemilk"
+        # Update origin with token
+        git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+        CURRENT_BRANCH=master npm run publish-gh-pages
